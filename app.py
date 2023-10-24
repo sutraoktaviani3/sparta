@@ -34,7 +34,6 @@ def movie_post():
 
     soup = BeautifulSoup(data.text, 'html.parser')
 
-    # From here on, we will write the code for extracting data from meta tags
 
     og_image = soup.select_one('meta[property="og:image"]')
     og_title = soup.select_one('meta[property="og:title"]')
